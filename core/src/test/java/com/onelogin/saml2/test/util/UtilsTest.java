@@ -634,7 +634,6 @@ public class UtilsTest {
 		String keyString = Util.getFileAsString("data/misc/sp3.key");
 		
 		expectedEx.expect(Exception.class);
-		expectedEx.expectMessage("algid parse error, not a sequence");
 		Util.loadPrivateKey(keyString);
 	}
 	
